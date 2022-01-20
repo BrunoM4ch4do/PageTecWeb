@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+ <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Daniel Turner"/>
+    <meta name="description" content="descrição do site"/>
+
+    <title>A minha Página</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="pai">
+   <div class="filho"></div>
+   </div>
+   <script>
+       var x =document.getElementsByClassName("filho")[0];
+       x.style.left = "20px";
+       setInterval(() => {
+           x.style.left = parseInt(x.style.left, 10) + 5 + "px";
+       }, 1000);
+   </script>
+</body>
+</html>
